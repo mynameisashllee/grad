@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notebook Page</title>
+  <style>
+    @font-face {
+      font-family: "myfont";
+      src: url("fonts/myfont.ttf");
+    }
+
+    @font-face {
+      font-family: "normalfont";
+      src: url("fonts/normalfont.ttf");
+    }
+
+    body {
+      margin: 0;
+      background: white;
+      font-family: "normalfont", sans-serif;
+      font-size: 30px;
+    }
+
+    .titles {
+      font-family: "myfont", sans-serif;
+      font-size: 50px;
+    }
+
+    .notebook {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      background-color: white;
+    }
+
+    .notebook::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 60px;
+
+      background-image: url("red-line.png");
+      background-repeat: repeat-y;
+      background-size: contain;
+      background-position: center;
+      width: auto;
+      min-width: 20px;
+    }
+
+
+    .line-space {
+      position: relative;
+      padding: 20px 20px 20px 80px;
+      min-height: 80px;
+      box-sizing: border-box;
+
+      background-image:
+        url("blue-line.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: left bottom;
+      background-size: 100% auto; /* stretch across width */
+    }
+
+    #redline {
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="notebook">
+    <div class="line-space titles">Dear Ridhima, </div>
+    <div class="line-space">HAPPY GRAD!</div>
+    <div class="line-space">Love,</div>
+    <div class="line-space">Ara</div>
+  </div>
+</body>
+</html>
