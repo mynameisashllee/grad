@@ -12,12 +12,21 @@ body {
     margin: 0;
     background: white;
     font-family: "normalfont", sans-serif;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 .titles {
     font-family: "myfont", sans-serif;
+    font-size: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
     font-size: 50px;
+  }
+  .titles {
+    font-size: 100px;
+  }
 }
 
 .notebook {
